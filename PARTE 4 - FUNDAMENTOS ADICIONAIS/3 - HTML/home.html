@@ -1,0 +1,38 @@
+<!-- Introdução a HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Introdução a CSS -->
+    <style>
+        h2 {
+            color: red;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Página Principal</h2>
+
+    <marquee>
+        <!-- "{{}}" = serve como criar uma variavel em html -->
+        <h4>Seja Bem Vindo, {{ .Nome }} </h4>
+    </marquee>
+    
+    <!-- Introdução a JavaScript -->
+    <button id="botao">Clique aqui</button>
+
+    <script>
+        var botao = document.getElementById("botao")
+        botao.onclick = function() {
+            alert("Botão clicado com sucesso !")
+        }
+    </script>
+    
+</body>
+</html>
