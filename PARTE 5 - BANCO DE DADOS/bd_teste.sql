@@ -1,0 +1,10 @@
+CREATE DATABASE devbook;
+show databases;
+USE devbook;
+CREATE TABLE usuarios(id int auto_increment primary key, nome varchar(50) not null, email varchar(50) not null) ENGINE=InnoDB;
+show tables;
+CREATE USER 'golang'@'localhost' IDENTIFIED BY 'golang';
+GRANT ALL PRIVILEGES ON devbook.* TO 'golang'@'localhost';
+SELECT USER, host FROM mysql.user;
+SHOW grants for 'golang'@'localhost';
+grant all privileges on devbook.* TO 'golang'@'localhost';
